@@ -1,0 +1,14 @@
+<div class="content-box" *ngFor="let contact of contacts">
+    <h3>{{contact.nombreCompleto}}</h3>
+    <p>{{contact.email}}</p>
+    <p>{{contact.telefonos}}</p>
+    <div class="buttons-container">
+        <a routerLink="/edit-listing/{{contact.id}}">
+            <button>Edit</button>
+        </a>
+        <button (click)="onDeleteClicked(contact.id)">Delete</button>
+    </div>
+</div>
+<a routerLink="/new-listing">
+    <button>Create New Listing</button>
+</a>

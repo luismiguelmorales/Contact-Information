@@ -1,0 +1,9 @@
+<div class="content-box">
+    <h2>Edit Listing</h2>
+    <app-listing-data-form 
+        buttonText="Save Changes"
+        [currentName]="contact.nombreCompleto"
+        [currentDescription]="contact.email"
+        [currentPrice]="contact.telefonos"
+        (onSubmit)="onSubmit()"></app-listing-data-form>
+</div>
