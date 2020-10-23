@@ -26,8 +26,8 @@ export class MyListingsPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.listings = fakeMyListings;
-    // this.contacts = contactList;
-    this.getContacts();
+    this.contacts = contactList;
+    // this.getContacts();
     console.log(this.contacts);
   }
 
